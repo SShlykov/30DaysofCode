@@ -1,7 +1,5 @@
 Imports System
-
 Module Solution
-    
     Public Shared Sub Main()
         ' Create a String variable:
         Dim greeting As String 
