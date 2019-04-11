@@ -3,3 +3,5 @@ temp*
 test
 *.deb
 *.ts
+.vscode
+.idea
