@@ -22,9 +22,28 @@ function readLine() {
   return inputString[currentLine++];
 }
 
+
+
 function main() {
-  const n = parseInt(readLine(), 10);
-  for (let i = 1; i <= 10; i++) {
-    console.log(`${n} x ${i} = ${n * i}`);
+  let n = parseInt(readLine(), 10);
+  let sum = 0, max = 0;
+
+  while (n > 0) {
+
+    if (n % 2 == 1) {
+
+      sum++;
+
+      if (sum > max) {
+        max = sum;
+      }
+    } else {
+
+      sum = 0;
+    }
+
+    n = Math.floor(n / 2);
   }
+
+  console.log(max);
 }
